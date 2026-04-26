@@ -1,0 +1,5 @@
+Place your resume PDF here and name it:
+  Eldrin_David_Asuncion_Resume.pdf
+
+The download button in the Resume section links to:
+  src/assets/Eldrin_David_Asuncion_Resume.pdf

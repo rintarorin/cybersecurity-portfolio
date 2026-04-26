@@ -1,0 +1,591 @@
+<!--
+    File: index.html
+    Purpose: Developer portfolio main page
+    Signed by: Eldrin
+    Date: 2026-04-25
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldrin David Asuncion | Cybersecurity Portfolio</title>
+    <meta name="description" content="Cybersecurity professional portfolio – Eldrin David Asuncion">
+    <meta name="author" content="Eldrin David Asuncion">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/animations.css">
+</head>
+<body>
+    <!-- [BOOT] Initializing Threat Intelligence Dashboard... -->
+    <div id="bootScreen" class="boot-screen">
+        <div class="boot-content">
+            <div class="boot-header">
+                <pre class="ascii-art">
+  ______ _      _____  _____  _____ _   _   _____     __      _______ _____  
+ |  ____| |    |  __ \|  __ \|_   _| \ | | |  __ \   /\ \    / /_   _|  __ \ 
+ | |__  | |    | |  | | |__) | | | |  \| | | |  | | /  \ \  / /  | | | |  | |
+ |  __| | |    | |  | |  _  /  | | | . ` | | |  | |/ /\ \ \/ /   | | | |  | |
+ | |____| |____| |__| | | \ \ _| |_| |\  | | |__| / ____ \  /   _| |_| |__| |
+ |______|______|_____/|_|  \_\_____|_| \_| |_____/_/    \_\/   |_____|_____/ 
+                                                                             
+                                                                            
+                </pre>
+            </div>
+            <div class="boot-terminal">
+                <p><span class="boot-prompt">[SYSTEM]</span> <span class="boot-text">Initializing system...</span></p>
+                <p><span class="boot-prompt">[BOOT]</span> <span class="boot-text">Loading core modules</span> <span class="boot-dots"></span></p>
+                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Mounting file systems</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[LOAD]</span> <span class="boot-text">Starting network services</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[EXEC]</span> <span class="boot-text">Loading portfolio.sh</span> <span class="boot-dots"></span></p>
+                <p><span class="boot-prompt">[INIT]</span> <span class="boot-text">Initializing user interface</span> <span class="boot-status boot-ok">[OK]</span></p>
+                <p><span class="boot-prompt">[DONE]</span> <span class="boot-text">System ready</span> <span class="boot-status boot-ready">[READY]</span></p>
+            </div>
+            <div class="boot-progress">
+                <div class="boot-progress-bar"></div>
+            </div>
+            <p class="boot-footer">Press any key to continue... <span class="boot-sign">— E.D. Asuncion</span></p>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <!-- <div class="logo">&gt;_security.sh <span class="logo-sign">· Eldrin</span></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+            <div class="nav-links" id="navLinks">
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#skills" onclick="closeMenu()">Skills</a>
+                <a href="#experience" onclick="closeMenu()">Experience</a>
+                <a href="#education" onclick="closeMenu()">Education</a>
+                <a href="#certifications" onclick="closeMenu()">Certifications</a>
+                <a href="#projects" onclick="closeMenu()">Projects</a>
+                <!-- <a href="#blog" onclick="closeMenu()">Blog</a> -->
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <div class="tag">// Cybersecurity Analyst &amp; Computer Engineer</div>
+            <h1>ELDRIN DAVID ASUNCION <!-- <small class="inline-sign">(Eldrin)--></small></h1> 
+            <p class="subtitle">Protecting digital infrastructure<!-- — one threat at a time--></p>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dot dot-red"></div>
+                    <div class="terminal-dot dot-yellow"></div>
+                    <div class="terminal-dot dot-green"></div>
+                </div>
+                <div class="terminal-text">
+                    <p><span class="prompt">$</span> <span class="command">./get_profile.sh</span></p>
+                    <p class="output">Security professional with expertise in:</p>
+                    <p class="output"><span class="prompt">&gt;</span> Network Security &amp; Threat Detection</p>
+                    <p class="output"><span class="prompt">&gt;</span> Scripting &amp; Security Automation</p>
+                    <p class="output"><span class="prompt">&gt;</span> Incident Analysis &amp; Risk Management</p>
+                    <br>
+                    <p><span class="prompt">$</span> <span class="command">cat contact.txt</span></p>
+                    <p class="output">LinkedIn: <a href="https://www.linkedin.com/in/eldrindavidasuncion/" target="_blank" class="link">linkedin.com/in/eldrindavidasuncion</a></p>
+                    <br>
+                    <p><span class="prompt">$</span> <span class="output">_</span><span style="animation: blink 1s infinite;">|</span></p>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hi! I'm <span class="highlight">Eldrin David Asuncion</span>, a Computer Engineering graduate pursuing a Post-Graduate Certificate in Cybersecurity at George Brown Polytechnic.
+                    </p>
+                    <p>
+                        With a foundation in computer systems, networking, and programming, I'm building hands-on expertise in network security, threat detection, and security automation. My engineering background fuels a systematic, analytical approach to identifying and solving security challenges.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Security Certification</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">80%</div>
+                            <div class="stat-label">Automation Time Saved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Drive to Learn</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dot dot-red"></div>
+                            <div class="code-dot dot-yellow"></div>
+                            <div class="code-dot dot-green"></div>
+                            <span class="code-title">about.js</span>
+                        </div>
+                        <div class="code-content">
+<pre><code><span class="code-keyword">const</span> <span class="code-variable">analyst</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Eldrin David Asuncion"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Security Analyst"</span>,
+  <span class="code-property">location</span>: <span class="code-string">"Toronto, ON"</span>,
+  <span class="code-property">interests</span>: [
+    <span class="code-string">"Network Security"</span>,
+    <span class="code-string">"Threat Detection"</span>,
+    <span class="code-string">"Security Automation"</span>,
+    <span class="code-string">"Incident Response"</span>
+  ],
+  <span class="code-property">currentlyLearning</span>: [
+    <span class="code-string">"CompTIA Security+"</span>,
+    <span class="code-string">"Splunk SIEM"</span>
+  ],  <!-- <span class="code-property">funFact</span>: <span class="code-string">"Automated a 5hr task down to 1hr with PowerShell"</span> -->
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category fade-in">
+                <h3>Security &amp; Networking</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Network Security / Firewalls</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Wireshark / Traffic Analysis</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>TCP/IP, VLANs, DNS, VPN</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in" style="animation-delay: 0.1s;">
+                <h3>Scripting &amp; Development</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>PowerShell</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Python / Bash</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>SQL / C# / Java</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="70%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category fade-in" style="animation-delay: 0.2s;">
+                <h3>Tools &amp; Platforms</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>SIEM (Sumo Logic / Splunk)</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Active Directory / Windows Server</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>VMware / VirtualBox / Azure</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Associate Software Engineer — Accenture, Philippines</h3>
+                    <div class="timeline-date">Apr 2025 – Dec 2025</div>
+                    <p class="timeline-description">
+                        Automated repetitive tasks with PowerShell scripting, cutting task completion time by 80% (from 5 hours to 1 hour). Found and fixed bugs in scripts to ensure smooth operation. Assisted in troubleshooting system and deployment issues, reducing downtime. Applied scripting and automation best practices to improve efficiency and maintainability of internal tools.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="animation-delay: 0.1s;">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Customer Service Representative — ePerformax Contact Centers &amp; BPO</h3>
+                    <div class="timeline-date">Jul 2024 – Mar 2025</div>
+                    <p class="timeline-description">
+                        Managed 60+ daily cases with strong incident prioritization and documentation. Investigated order and delivery problems through systematic root-cause analysis and escalation. Adhered to company policies for handling sensitive customer data, ensuring confidentiality and compliance. Leveraged internal CRM tools to track and resolve issues in real time.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="animation-delay: 0.2s;">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Graphic Designer — ClutchPoint Inc.</h3>
+                    <div class="timeline-date">Jan 2019 – Jan 2020</div>
+                    <p class="timeline-description">
+                        Managed digital assets for public platforms, ensuring data integrity and secure content handling. Created and optimized digital content using Adobe Photoshop. Maintained organized file structures for team collaboration. Adhered to strict guidelines and workflows in a fast-paced environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Graduate Certificate – Cybersecurity</h3>
+                    <div class="timeline-date">Jan 2026 – Dec 2026</div>
+                    <p class="timeline-description">
+                        George Brown College, Toronto, ON. Set up network segmentation with firewall rules in a lab environment to simulate secure networks. Used Wireshark to scan for vulnerabilities and analyze network traffic. Documented network configurations and security findings from lab exercises.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in" style="animation-delay: 0.1s;">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Science – Computer Engineering</h3>
+                    <div class="timeline-date">Aug 2015 – May 2023</div>
+                    <p class="timeline-description">
+                        University of Baguio, Philippines. Worked on engineering projects including an electronic testing system, a web-based attendance monitoring system, and a quadruped robot. Built system components with HTML, CSS, JavaScript, PHP, and electronic hardware. Tested, debugged, and improved systems to ensure accuracy and reliability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications <!--&amp; Awards--></h2>
+        <div class="certifications-grid">
+            <div class="cert-card fade-in">
+                <div class="cert-icon">🔐</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Cybersecurity</div>
+                        <div class="cert-issuer">ISC2</div>
+                    </div>
+                </div>
+                <h3>ISC2 Certified in Cybersecurity (CC)</h3>
+                <p class="cert-description">
+                    Industry-recognized entry-level cybersecurity certification covering security principles, incident response, and network security concepts.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">April 2026</span>
+                    <span class="cert-badge-text"><!-- ✅ Earned --></span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.1s;">
+                <div class="cert-icon">🌐</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Networking</div>
+                        <div class="cert-issuer">Cisco</div>
+                    </div>
+                </div>
+                <h3>Cisco CCNA</h3>
+                <p class="cert-description">
+                    Validates skills in network fundamentals, IP connectivity, security fundamentals, and automation.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">Expected 2026</span>
+                    <!-- <a href="#" class="cert-link">In Progress &rarr;</a> -->
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.2s;">
+                <div class="cert-icon">🛡️</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Security</div>
+                        <div class="cert-issuer">CompTIA</div>
+                    </div>
+                </div>
+                <h3>CompTIA Security+</h3>
+                <p class="cert-description">
+                    Core cybersecurity certification covering threat management, cryptography, identity management, and risk mitigation.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">Expected 2026</span>
+                    <!-- <a href="#" class="cert-link">In Progress &rarr;</a> -->
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.3s;">
+                <div class="cert-icon">📡</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Networking</div>
+                        <div class="cert-issuer">CompTIA</div>
+                    </div>
+                </div>
+                <h3>CompTIA Network+</h3>
+                <p class="cert-description">
+                    Validates foundational networking skills including infrastructure, troubleshooting, and network security.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">Expected 2026</span>
+                    <!-- <a href="#" class="cert-link">In Progress &rarr;</a> -->
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.4s;">
+                <div class="cert-icon">📊</div>
+                <div class="cert-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">SIEM</div>
+                        <div class="cert-issuer">Splunk</div>
+                    </div>
+                </div>
+                <h3>Splunk Core Certified Power User</h3>
+                <p class="cert-description">
+                    Validates advanced Splunk skills including search processing, reports, dashboards, and data models for security analytics.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">Expected 2026</span>
+                    <!-- <a href="#" class="cert-link">In Progress &rarr;</a> -->
+                </div>
+            </div>
+
+            <div class="cert-card fade-in" style="animation-delay: 0.5s;">
+                <div class="cert-icon">⚔️</div>
+                <div class="cert-badge award-badge">
+                    <div class="cert-badge-inner">
+                        <div class="cert-title">Ethical Hacking</div>
+                        <div class="cert-issuer">EC-Council</div>
+                    </div>
+                </div>
+                <h3>CEH – Certified Ethical Hacker</h3>
+                <p class="cert-description">
+                    Advanced certification in penetration testing, vulnerability assessment, and ethical hacking methodologies.
+                </p>
+                <div class="cert-footer">
+                    <span class="cert-date">Expected 2027</span>
+                    <!-- <a href="#" class="cert-link">Planned &rarr;</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <h3>🔒 Secure Network Lab</h3>
+                <p>Designed and configured network segmentation with firewall rules in a virtualized environment to simulate a secure enterprise network using Cisco Packet Tracer and pfSense.</p>
+                <a href="#contact" class="project-link">Learn More &rarr;</a>
+            </div>
+            
+            <div class="project-card fade-in" style="animation-delay: 0.1s;">
+                <h3>⚙️ PowerShell Automation Suite</h3>
+                <p>Developed a set of PowerShell scripts to automate repetitive IT/data entry tasks, reducing completion time from 5 hours to 1 hour — an 80% improvement in efficiency.</p>
+                <a href="#contact" class="project-link">Learn More &rarr;</a>
+            </div>
+            
+            <div class="project-card fade-in" style="animation-delay: 0.2s;">
+                <h3>🌐 Web-Based Attendance System</h3>
+                <p>Built a full-stack attendance monitoring web application using HTML, CSS, JavaScript, and PHP with a relational database back end for a university engineering project.</p>
+                <a href="#contact" class="project-link">Learn More &rarr;</a>
+            </div>
+<!-- 
+            <div class="project-card fade-in" style="animation-delay: 0.3s;">
+                <h3>🤖 Quadruped Robot</h3>
+                <p>Designed and built a four-legged walking robot as a capstone engineering project, integrating electronic hardware, servo control, and embedded programming.</p>
+                <a href="#contact" class="project-link">Learn More &rarr;</a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- <section id="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-grid">
+            <div class="blog-card fade-in">
+                <div class="blog-header">
+                    <div class="blog-date">April 2026</div>
+                </div>
+                <div class="blog-body">
+                    <h3>Getting Started with SIEM: Lessons from Sumo Logic</h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">SIEM</span>
+                        <span class="blog-tag">Log Analysis</span>
+                        <span class="blog-tag">Threat Detection</span>
+                    </div>
+                    <p>A practical walkthrough of setting up log ingestion, building dashboards, and writing detection queries to identify suspicious activity...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <div class="blog-card fade-in" style="animation-delay: 0.1s;">
+                <div class="blog-header">
+                    <div class="blog-date">March 2026</div>
+                </div>
+                <div class="blog-body">
+                    <h3>Network Segmentation with Firewall Rules</h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Networking</span>
+                        <span class="blog-tag">Firewall</span>
+                        <span class="blog-tag">VLANs</span>
+                    </div>
+                    <p>How I built a segmented network lab environment to practice isolating critical assets and enforcing least-privilege access between zones...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <div class="blog-card fade-in" style="animation-delay: 0.2s;">
+                <div class="blog-header">
+                    <div class="blog-date">February 2026</div>
+                </div>
+                <div class="blog-body">
+                    <h3>Automating IT Tasks with PowerShell</h3>
+                    <div class="blog-tags">
+                        <span class="blog-tag">PowerShell</span>
+                        <span class="blog-tag">Automation</span>
+                        <span class="blog-tag">Scripting</span>
+                    </div>
+                    <p>How scripting transformed a 5-hour manual workflow into a 1-hour automated process — and what I learned about building maintainable scripts...</p>
+                    <a href="#" class="project-link">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-item fade-in">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:eldrindavid.asuncion@georgebrown.ca">eldrindavid.asuncion@georgebrown.ca</a>
+                </div>
+
+                <div class="contact-item fade-in" style="animation-delay: 0.1s;">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <a href="tel:6475097186">(647) 509-7186</a>
+                </div>
+
+                <div class="contact-item fade-in" style="animation-delay: 0.2s;">
+                    <div class="contact-icon">🔗</div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/eldrindavidasuncion/" target="_blank">linkedin.com/in/eldrindavidasuncion</a>
+                </div>
+
+                <div class="contact-item fade-in" style="animation-delay: 0.3s;">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <span>Toronto, ON, Canada</span>
+                </div>
+            </div>
+
+            <div class="contact-form fade-in">
+                <form>
+                    <div class="form-group">
+                        <label>$ name --input</label>
+                        <input type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>$ email --input</label>
+                        <input type="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>$ message --input</label>
+                        <textarea placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" style="text-align: center; padding: 5rem 2rem;">
+        <h2>Resume</h2>
+        <p style="color: var(--text-muted, #aaa); margin-bottom: 2.5rem; max-width: 480px; margin-left: auto; margin-right: auto;">
+            Download my latest resume to learn more about my background, skills, and qualifications.
+        </p>
+        <a href="src/assets/Eldrin_David_Asuncion_Resume.pdf" download
+           class="btn btn-primary"
+           style="font-size: 1rem; padding: 0.9rem 2.8rem; display: inline-flex; align-items: center; gap: 0.65rem; text-decoration: none;">
+            ⬇ &nbsp;Download Resume (PDF)
+        </a>
+    </section>
+
+    <footer>
+    <p>&copy; 2026 <span class="signature">Eldrin David Asuncion</span>. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Made with ❤️ using HTML, CSS &amp; JavaScript</p>
+        <p style="margin-top: 0.25rem; font-size: 0.8rem; color: #bbb;">Cybersecurity Graduate Student · George Brown College · Toronto, ON</p>
+    </footer>
+
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
+
+<!-- End of file - Eldrin David Asuncion -->
